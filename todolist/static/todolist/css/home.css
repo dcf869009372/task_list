@@ -1,0 +1,7 @@
+.no-underline a:hover{
+  text-underline-mode: none;
+  text-decoration: none;
+}
+#line-through{
+  text-decoration: line-through;
+}
