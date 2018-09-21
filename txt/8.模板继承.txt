@@ -1,0 +1,23 @@
+我想改变导航栏的样式怎么办? 3个网页都要改?
+
+Template inheritance
+做个模板html(所有网页的风格主题), 其他网页继承它,拓展它, 类似python的类继承
+
+extends
+{% extends "base.html" %}
+
+block tag
+{% block blockname %}
+    
+{% endblock blockname %}
+
+
+three-level 大网站建议三级,小网站两级 
+
+                              article.html
+                            / 
+             base_news.html  
+           /                \
+base.html                     live.html
+           \
+             base_sports.html

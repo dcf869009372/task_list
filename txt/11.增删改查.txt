@@ -1,0 +1,27 @@
+﻿如果是get请求怎么办?  request.POST 中不存在'待办事项'这个键
+
+如果是post请求, 但用户不写内容怎么办? request.POST 中的'待办事项'这个键对应值为 空的字符串 ''
+
+全局列表
+
+{% for  in  %}
+
+    {{ forloop.counter }}  # 序号显示
+
+    {% if  %}
+        
+    {% else %}
+        
+    {% endif %}
+
+{% endfor %}
+
+"{% url 'todolist:删除' forloop.counter %}"
+{# del/<forloop_counter> #}
+redirect()
+
+
+用GET方法删除,划掉真的对吗? 用隐藏的form
+
+
+增删改查 用字典存储, 只要服务器开着...

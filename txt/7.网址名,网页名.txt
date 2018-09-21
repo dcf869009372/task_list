@@ -1,0 +1,24 @@
+
+关于include()
+
+
+大项目 -> 要避免网址名 网页名冲突
+
+render() 如何找到网页 ?
+    根据所提供的网页名称,找所有的templates的文件夹,取第一个匹配的
+网页名字重复怎么办?
+    给个前缀
+    建个新文件夹在templates下,以 app的名字 命名
+    templates/app的名字/网页名字
+    views.py -> return render(request, "todolist/home.html")
+
+
+<a href="hostname/urlpattern"></a>
+想改网址怎么办?要改的地方好多o(╥﹏╥)o
+    给网址起名字
+    <a href="{% url 'url_name' %}"></a>  template tag{% tag_name  %}
+
+网址名跟其他app里面的网址名字重复怎么办?
+    给个前缀
+    urls.py -> app_name = 'todolist'
+    <a href="{% url 'todolist:url_name' %}"></a>

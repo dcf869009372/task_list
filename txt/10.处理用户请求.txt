@@ -1,0 +1,16 @@
+﻿把<link rel="icon" href="../../../../favicon.ico">去了
+
+request GET
+
+200 正常
+403 拒绝
+404 找不到  
+
+HTML form -> action="" method="POST"  button->submit
+
+{% csrf_token %}  跨站请求伪造(Django要求，form表单为post请求时，写在form里)
+name=""  给input的起名字(Django要求)
+
+request.POST是什么?  QueryDict(Django提供的一个类)
+content dictionary 在html中通过var访问字典
+{{ var }}  变量{{ }} 和标签{% %}  

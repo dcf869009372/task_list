@@ -1,0 +1,10 @@
+图片 css javascript
+
+app/static/app/images
+app/static/app/js
+app/static/app/css
+app/static/app/icons
+避免与其他app的static文件夹里面的静态文件冲突
+
+{% load static %}
+{% static "路径" %}

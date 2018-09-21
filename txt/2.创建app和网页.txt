@@ -1,0 +1,18 @@
+cd Desktop\Django_venv\Scripts  # 到虚拟环境文件夹
+activate  # 执行该文件
+cd ..  # 返回上一级
+cd Django_Projects\to_do_list  # 进入todo项目文件夹
+python manage.py runserver  # 驱动服务器
+
+
+# 选个好用的文本编辑器
+
+
+# 一个app负责一种功能
+# 创建一个 todolist App 负责实现 待办事项 功能
+python manage.py startapp todolist
+
+# 注册该app,告诉服务器我存在
+# 在settings.py  INSTALLED_APPS中加入
+
+# 在这个app里面做个html网页,放在 templates (网页模板)文件夹中
